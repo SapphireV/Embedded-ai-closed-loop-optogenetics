@@ -50,11 +50,11 @@ while(True):          # acquire image in while loop
         if (i == 0):
             p.low() #continue # background class
         if (len(detection_list) == 0): continue # no detections for this class?
-        if (i == 3):
+        if (i == 1):
             p.low()
         if (i == 2):
             p.low()
-        if (i == 1):
+        if (i == 3):
             p.high()
             sensor.skip_frames(time=10000)
 
@@ -70,8 +70,3 @@ while(True):          # acquire image in while loop
         #lcd.display(sensor.snapshot())  # 拍照并显示图像。
 
     print(clock.fps(), "fps", end="\n\n")
-
-
-
-
-
