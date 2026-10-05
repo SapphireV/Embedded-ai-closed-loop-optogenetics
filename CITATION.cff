@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code or the example model, please cite the paper."
+authors:
+  - family-names: Hou
+    given-names: Xingfei
+title: "Embedded AI Enable Real-Time Closed-Loop Optogenetics: Application to Pedunculopontine Nucleus-Induced Motor Arrest and Place Preference"
+journal: "Journal of Neural Engineering"
+year: 2026
