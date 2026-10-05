@@ -40,6 +40,7 @@ The system uses an OpenMV Cam H7 Plus running an onboard FOMO MobileNetV2 object
     ├── labels.txt
     ├── main_roi_trigger.py
     └── trained.tflite
+```
 
 openmv/main_roi_trigger.py: Main OpenMV script for ROI/event-triggered optogenetic stimulation.
 
@@ -90,9 +91,11 @@ The script main_roi_trigger.py uses labels.txt to map class indices. The default
 3 STI
 With this order, the trigger class STI is at index 3, so the script uses:
 
+```text
 if (i == 3):
     p.high()
     sensor.skip_frames(time=10000)
+```
 If your Edge Impulse training used a different label order, simply:
 
 Open labels.txt and find the line number of your trigger class (starting from 0).
